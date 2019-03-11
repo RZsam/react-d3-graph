@@ -71,3 +71,4 @@ gen-docs
 .DS_Store
 cypress/videos/
 cypress/screenshots/
+.idea
