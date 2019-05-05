@@ -11,7 +11,7 @@
         "dist:rd3g": "rm -rf dist/ && webpack --config webpack.config.dist.js -p --display-modules --optimize-minimize",
         "dist:sandbox": "webpack --config webpack.config.js -p",
         "dist:transpile": "./node_modules/babel-cli/bin/babel.js -d lib src",
-        "dist": "npm run check && npm-run-all --parallel dist:*",
+        "dist": "npm-run-all --parallel dist:*",
         "docs:lint": "node_modules/documentation/bin/documentation.js lint src/**/*.js",
         "docs:watch": "node_modules/documentation/bin/documentation.js --config documentation.yml build src/**/*.js -f html -o gen-docs --watch",
         "docs": "npm run docs:lint && node_modules/documentation/bin/documentation.js --config documentation.yml build src/**/*.js -f html -o gen-docs && node_modules/documentation/bin/documentation.js build src/**/*.js -f md > gen-docs/DOCUMENTATION.md",
