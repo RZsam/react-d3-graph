@@ -131,7 +131,7 @@ export default class Node extends React.Component {
             gty -= ty;
         } else {
             nodeProps.d = nodeHelper.buildSvgSymbol(size, this.props.type);
-            nodeProps.fill = "#ff7a47";
+            nodeProps.fill = this.props.done ? "#0ab400" : "#625eb1";
             nodeProps.stroke = this.props.stroke;
             nodeProps.strokeWidth = this.props.strokeWidth;
 
